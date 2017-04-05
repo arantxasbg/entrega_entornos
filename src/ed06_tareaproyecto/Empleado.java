@@ -19,8 +19,8 @@ public class Empleado {
     
     /**
      * El constructor inicializa el cargo con EMPLEADO y el número de hijos a 0.
-     * @param dni : Será el valor que tenga el dni del objeto.
-     * @param nombre : Será el nombre del empleado.
+     * @param dni Será el valor que tenga el dni del objeto.
+     * @param nombre Será el nombre del empleado.
      */
     public Empleado (String dni, String nombre){
         this.dni=dni;
@@ -37,7 +37,7 @@ public class Empleado {
     }
 
     /**
-     * @param dni: Será el nuevo valor que tenga el dni del empleado.
+     * @param dni Será el nuevo valor que tenga el dni del empleado.
      */
     public void setDni(String dni) {
         this.dni = dni;
@@ -51,7 +51,7 @@ public class Empleado {
     }
 
     /**
-     * @param nombre: Será el nuevo nombre del empleado.
+     * @param nombre Será el nuevo nombre del empleado.
      */
     public void setNombre(String nombre) {
         this.nombre = nombre;
@@ -65,7 +65,7 @@ public class Empleado {
     }
 
     /**
-     * @param direccion : Domicilio del empleado.
+     * @param direccion Domicilio del empleado.
      */
     public void setDireccion(String direccion) {
         this.direccion = direccion;
@@ -79,7 +79,7 @@ public class Empleado {
     }
 
     /**
-     * @param cargo es el nuevo puesto del empleado en la empresa.
+     * @param cargo Será el nuevo puesto del empleado en la empresa.
      */
     public void setCargo(String cargo) {
         this.cargo = cargo;
@@ -93,7 +93,7 @@ public class Empleado {
     }
 
     /**
-     * @param numHijos: Será el nuevo número de hijos que tiene el empleado.
+     * @param numHijos Será el nuevo número de hijos que tiene el empleado.
      */
     public void setNumHijos(int numHijos) {
         this.numHijos = numHijos;
@@ -117,7 +117,7 @@ public class Empleado {
     
     /**
      * Este método es de la clase ya que se dedica a imprimir datos.
-     * @param empleado1 : Empleado del que queremos visualizar los datos.
+     * @param empleado1 Empleado del que queremos visualizar los datos.
      */
     public static void imprimir_emp(Empleado empleado1) {
         System.out.println("DNI: " + empleado1.getDni());
