@@ -6,8 +6,8 @@
 package ed06_tareaproyecto;
 
 /**
- *
- * @author ED06
+ * CLASE EMPLEADO
+ * @author arantxa
  */
 public class Empleado {
 
@@ -17,6 +17,11 @@ public class Empleado {
     private String cargo;
     private int numHijos;
     
+    /**
+     * El constructor inicializa el cargo con EMPLEADO y el número de hijos a 0.
+     * @param dni : Será el valor que tenga el dni del objeto.
+     * @param nombre : Será el nombre del empleado.
+     */
     public Empleado (String dni, String nombre){
         this.dni=dni;
         this.nombre=nombre;
@@ -25,76 +30,79 @@ public class Empleado {
     }
     
     /**
-     * @return the dni
+     * @return el dni del empleado.
      */
     public String getDni() {
         return dni;
     }
 
     /**
-     * @param dni the dni to set
+     * @param dni: Será el nuevo valor que tenga el dni del empleado.
      */
     public void setDni(String dni) {
         this.dni = dni;
     }
 
     /**
-     * @return the nombre
+     * @return nombre del empleado.
      */
     public String getNombre() {
         return nombre;
     }
 
     /**
-     * @param nombre the nombre to set
+     * @param nombre: Será el nuevo nombre del empleado.
      */
     public void setNombre(String nombre) {
         this.nombre = nombre;
     }
 
     /**
-     * @return the direccion
+     * @return direccion del empleado
      */
     public String getDireccion() {
         return direccion;
     }
 
     /**
-     * @param direccion the direccion to set
+     * @param direccion : Domicilio del empleado.
      */
     public void setDireccion(String direccion) {
         this.direccion = direccion;
     }
 
     /**
-     * @return the cargo
+     * @return cargo del empleado en la empresa.
      */
     public String getCargo() {
         return cargo;
     }
 
     /**
-     * @param cargo the cargo to set
+     * @param cargo es el nuevo puesto del empleado en la empresa.
      */
     public void setCargo(String cargo) {
         this.cargo = cargo;
     }
 
     /**
-     * @return the numHijos
+     * @return número de hijos del empleado.
      */
     public int getNumHijos() {
         return numHijos;
     }
 
     /**
-     * @param numHijos the numHijos to set
+     * @param numHijos: Será el nuevo número de hijos que tiene el empleado.
      */
     public void setNumHijos(int numHijos) {
         this.numHijos = numHijos;
     }
     
-    
+    /**
+     * Este método calcula el sueldo del empleado según su cargo y número de hijos.
+     * @return sueldo total
+     */
     public double calcula_sueldo(){
         double total=1200;
         
@@ -107,6 +115,10 @@ public class Empleado {
         return total;
     }
     
+    /**
+     * Este método es de la clase ya que se dedica a imprimir datos.
+     * @param empleado1 : Empleado del que queremos visualizar los datos.
+     */
     public static void imprimir_emp(Empleado empleado1) {
         System.out.println("DNI: " + empleado1.getDni());
         System.out.println("Nombre: " + empleado1.getNombre());
