@@ -30,7 +30,7 @@ public class Empleado {
     }
     
     /**
-     * @return el dni del empleado.
+     * @return El dni del empleado.
      */
     public String getDni() {
         return dni;
@@ -44,7 +44,7 @@ public class Empleado {
     }
 
     /**
-     * @return nombre del empleado.
+     * @return Nombre del empleado.
      */
     public String getNombre() {
         return nombre;
@@ -58,7 +58,7 @@ public class Empleado {
     }
 
     /**
-     * @return direccion del empleado
+     * @return Dirección del empleado
      */
     public String getDireccion() {
         return direccion;
@@ -72,7 +72,7 @@ public class Empleado {
     }
 
     /**
-     * @return cargo del empleado en la empresa.
+     * @return Cargo del empleado en la empresa.
      */
     public String getCargo() {
         return cargo;
@@ -86,7 +86,7 @@ public class Empleado {
     }
 
     /**
-     * @return número de hijos del empleado.
+     * @return Número de hijos del empleado.
      */
     public int getNumHijos() {
         return numHijos;
@@ -101,7 +101,7 @@ public class Empleado {
     
     /**
      * Este método calcula el sueldo del empleado según su cargo y número de hijos.
-     * @return sueldo total
+     * @return Sueldo total
      */
     public double calcula_sueldo(){
         double total=1200;
